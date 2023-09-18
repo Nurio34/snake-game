@@ -1,0 +1,44 @@
+
+:root {
+    --body : white;
+    --width : 1rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+
+        header {
+            background-color: blue;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.2rem 0.6rem;
+        }
+
+        section {
+            width: calc(16 * var(--width));
+            aspect-ratio: 1;
+            background-color: gray;
+            position: relative;
+
+            .snake {
+                position: absolute;
+                width: var(--width);
+                aspect-ratio: 1;
+                background-color: black;
+            }
+
+            .food {
+                position: absolute;
+                width: var(--width);
+                aspect-ratio: 1;
+                background-color: red;
+            }
+        }
+    }
+}
+
